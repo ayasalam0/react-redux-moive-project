@@ -1,0 +1,19 @@
+/* ***** Home ***** */
+.trending-section {
+  background-color: #090909;
+}
+
+.popular-section {
+  background-color: #161616;
+}
+
+.trending-section,
+.popular-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 300px; /*Temp*/
+}
+.popular-section h2,
+.trending-section h2 {
+  color: #fafafa;
+}
