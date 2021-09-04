@@ -1,0 +1,30 @@
+/* ***** Banner Slider ***** */
+.banner-slider {
+  min-height: 550px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url("https://collider.com/wp-content/uploads/dark-knight-rises-movie-poster-banner-catwoman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-slider::before {
+}
+
+/* ***** Home ***** */
+.trending-section {
+  background-color: #090909;
+}
+
+.popular-section {
+  background-color: #161616;
+}
+
+.trending-section,
+.popular-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 300px; /*Temp*/
+}
+.popular-section h2,
+.trending-section h2 {
+  color: #fafafa;
+}
