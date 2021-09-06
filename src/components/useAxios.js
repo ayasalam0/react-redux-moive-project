@@ -16,9 +16,9 @@ const [loading, setLoading] = useState(false);
   const fetchData = async (params) => {
     setLoading(true);
     try {
-      const result = await axios.request(params);
-      setData(result.data);
-    } catch (err) {
+      const result = await axios.request(params);                        
+                
+                
       setError(err);
     } finally {
       setLoading(false);
