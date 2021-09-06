@@ -3,22 +3,19 @@ import axios from "axios";
 
 const useAxios = (axiosParams) => {
   const [Data, setData] = useState();
-   const [Search, setSearch] = useState("");
-
-
+  const [Search, setSearch] = useState(null);
 
   const [error, setError] = useState("");
 
-const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const baseURL = `https://api.themoviedb.org/3/search/movie?api_key=30ee1107f5cb26e8b60960dfc8d1d433=${Search}`;
+  const baseURL = `https://api.themoviedb.org/3/search/movie?api_key=30ee1107f5cb26e8b60960dfc8d1d433&query=${Search}`;
   axios.defaults.baseURL = `${baseURL}`;
   const fetchData = async (params) => {
     setLoading(true);
     try {
-      const result = await axios.request(params);                        
-                
-                
+      const result = await axios.request(params);
+      setData(result);
       setError(error);
     } finally {
       setLoading(false);
