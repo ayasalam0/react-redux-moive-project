@@ -19,7 +19,7 @@ const [loading, setLoading] = useState(false);
       const result = await axios.request(params);                        
                 
                 
-      setError(err);
+      setError(error);
     } finally {
       setLoading(false);
     }
