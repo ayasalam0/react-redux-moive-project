@@ -3,7 +3,7 @@ import axios from "axios";
 
 const useAxios = (axiosParams) => {
   const [Data, setData] = useState();
-  const [Search, setSearch] = useState(null);
+  const [Search, setSearch] = useState("batman");
 
   const [error, setError] = useState("");
 

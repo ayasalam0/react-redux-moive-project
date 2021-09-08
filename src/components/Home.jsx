@@ -1,3 +1,4 @@
+import MovieCard from "./MovieCard.jsx";
 function Home() {
   return (
     <div>
@@ -7,7 +8,7 @@ function Home() {
             <div className="col-12">
               <h2>Trending</h2>
             </div>
-            {/* Movie card component */}
+             <MovieCard/>
             {/* display as slider */}
           </div>
         </div>
@@ -18,7 +19,7 @@ function Home() {
             <div className="col-12">
               <h2>Popular</h2>
             </div>
-            <div className="col-md-5">{/* Movie card component */}</div>
+            <div className="col-md-5"><MovieCard/></div>
           </div>
         </div>
       </div>

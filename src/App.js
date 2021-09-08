@@ -11,7 +11,7 @@ function App() {
     //use Data to display the api data
   //setSearch for the value of the search for the api
   const { Data, loading, setSearch, setLoading } = useAxios();
-  console.log(Data); 
+  // console.log(Data); 
   return (
     <div className="App">
       <header className="App-header">

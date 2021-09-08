@@ -1,16 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import useAxios from "../useAxios.js"
- 
+import React, { useState, useEffect } from "react";
 
+import Search from "../Search.jsx";
 
 function Navbar() {
- 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Logo
-        </a>
+        <Search />
         <button
           className="navbar-toggler"
           type="button"
